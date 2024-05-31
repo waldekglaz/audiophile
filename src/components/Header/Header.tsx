@@ -2,7 +2,7 @@ import Hamburger from "../../assets/shared/tablet/icon-hamburger.svg";
 import Logo from "../../assets/shared/desktop/logo.svg";
 import Cart from "../../assets/shared/desktop/icon-cart.svg";
 import { HeaderWrapper } from "./Header.styled";
-
+import { Link } from "react-router-dom";
 import HeaderButton from "../HeaderButton/HeaderButton";
 
 const Header = () => {
@@ -13,7 +13,9 @@ const Header = () => {
         alt="Mobile menu, click to open"
         onClick={() => console.log("Mobile menu clicked")}
       />
-      <img src={Logo} alt="Audiophile logo" />
+      <Link to="/">
+        <img src={Logo} alt="Audiophile logo" />
+      </Link>
 
       <HeaderButton
         icon={Cart}

@@ -19,5 +19,34 @@ export const StyledFooter = styled.footer`
   ul {
     list-style: none;
     padding: 0;
+    margin: 48px 0;
+  }
+  li {
+    margin-bottom: 16px;
+  }
+
+  li a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  p {
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .footer__text {
+    line-height: 25px;
+    margin-bottom: 48px;
+  }
+
+  .socials {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
   }
 `;
