@@ -12,8 +12,8 @@ const Footer = () => {
       </Link>
 
       <ul>
-        {products.map((product, index) => (
-          <li key={index}>
+        {products.map((product) => (
+          <li key={product.name}>
             <Link to={product.url}>{product.name}</Link>
           </li>
         ))}
@@ -27,8 +27,13 @@ const Footer = () => {
 
       <p className="copyrights">Copyright {currentYear}. All Rights Reserved</p>
       <div className="socials">
-        {socials.map((social, index) => (
-          <Link to={social.url} key={social.name}>
+        {socials.map((social) => (
+          <Link
+            to={social.url}
+            key={social.name}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <img src={social.img} alt={`Link to ${social.name}`} />
           </Link>
         ))}

@@ -6,5 +6,5 @@ export const HeaderWrapper = styled.header`
   align-items: center;
   justify-content: space-between;
   padding: 32px 24px;
-  border-bottom: #979797;
+  border-bottom: 1px solid rgba(151, 151, 151, 0.3);
 `;
