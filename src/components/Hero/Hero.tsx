@@ -1,4 +1,5 @@
 import { StyledHero } from "./Hero.styled";
+import LinkButton from "../LinkButton/LinkButton";
 const Hero = () => {
   return (
     <StyledHero>
@@ -8,7 +9,12 @@ const Hero = () => {
         Experience natural, lifelike audio and exceptional build quality made
         for the passionate music enthusiast.
       </p>
-      <button className="btn">See Product</button>
+
+      <LinkButton
+        destination="/headphones/xx99-mark-two"
+        text="See Product"
+        primary
+      />
     </StyledHero>
   );
 };
