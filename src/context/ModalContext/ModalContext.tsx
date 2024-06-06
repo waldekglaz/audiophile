@@ -1,4 +1,4 @@
-import { useState, createContext } from "react";
+import React, { useState, createContext } from "react";
 
 interface ModalContextProps {
   modalIsOpen: boolean;
@@ -9,8 +9,6 @@ interface ModalContextProps {
 export const ModalContext = createContext<ModalContextProps | undefined>(
   undefined
 );
-
-import React from "react";
 
 export const ModalProvider: React.FC<{ children: React.ReactNode }> = ({
   children,

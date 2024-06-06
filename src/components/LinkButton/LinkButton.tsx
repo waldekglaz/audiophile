@@ -4,12 +4,12 @@ import { StyledButton } from "./LinkButton.styled";
 interface LinkButtonProps {
   destination: string;
   text: string;
-  primary?: boolean;
+  mode?: "primary" | "dark";
 }
 
-const LinkButton = ({ destination, text, primary }: LinkButtonProps) => {
+const LinkButton = ({ destination, text, mode }: LinkButtonProps) => {
   return (
-    <StyledButton as={Link} to={destination} $primary={primary}>
+    <StyledButton as={Link} to={destination} mode={mode}>
       {text}
     </StyledButton>
   );

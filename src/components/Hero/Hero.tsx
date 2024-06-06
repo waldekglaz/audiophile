@@ -13,7 +13,7 @@ const Hero = () => {
       <LinkButton
         destination="/headphones/xx99-mark-two"
         text="See Product"
-        primary
+        mode="primary"
       />
     </StyledHero>
   );
